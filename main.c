@@ -18,7 +18,7 @@
 #include <signal.h>
 #include <time.h>
 #include "config.h"
-#include "fbsplash.h"
+#include "fbv.h"
 
 #define PAN_STEPPING 20
 
