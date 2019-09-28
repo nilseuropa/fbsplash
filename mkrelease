@@ -1,0 +1,17 @@
+#!/bin/bash
+
+make distclean
+
+NAME="fbsplash-1.0"
+OLDDIR="`pwd`"
+
+rm -fr fbsplash-*.tar.gz
+cd ..
+mv $OLDDIR $NAME
+
+tar -zcvf $NAME.tar.gz $NAME/
+
+mv $NAME $OLDDIR
+mv $NAME.tar.gz $OLDDIR
+
+cd $OLDDIR
